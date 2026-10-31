@@ -13,6 +13,12 @@ From this directory, run `python -m http.server 8765 --bind 127.0.0.1`, then ope
 - `script.js`: progressive enhancements for language and navigation.
 - `assets/`: optimised images from the author's existing projects and a small SVG favicon.
 
+## Checks
+
+Run `node --check script.js` and `node tests/interactions.test.cjs`. The tests exercise the real script against a minimal DOM fixture: language round trips, translated metadata and accessible labels, menu focus, Escape, link selection and desktop resizing. These are logic checks, not a substitute for browser layout review.
+
+Without JavaScript, English content, navigation and expandable analysis notes remain available. Language preferences are not stored; each visit starts in English.
+
 ## Content and image sources
 
 - Poker Trainer: [public project showcase](https://github.com/con3eited-dot/poker-trainer-showcase). The screenshot is a test example from the local prototype, not an online game or a strategy-performance claim.
